@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task Dashboard – Storage & Fetch</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Task Management Dashboard</h1>
+    <button id="loadRemoteBtn">Load Sample Tasks</button>
+  </header>
+
+  <main class="main">
+    <section class="controls">
+      <form id="taskForm">
+        <input
+          type="text"
+          id="taskInput"
+          placeholder="Add a new task…"
+          autocomplete="off"
+          required
+        />
+        <select id="prioritySelect">
+          <option value="normal">Normal</option>
+          <option value="high">High</option>
+        </select>
+        <button type="submit">Add</button>
+      </form>
+
+      <div class="filters">
+        <label>
+          <input type="checkbox" id="showCompletedCheckbox" />
+          Show completed
+        </label>
+
+        <label>
+          Filter:
+          <select id="filterSelect">
+            <option value="all">All</option>
+            <option value="local">Local only</option>
+            <option value="remote">Remote only</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section class="status-bar">
+      <span id="statusMsg">Ready.</span>
+      <span id="errorMsg"></span>
+    </section>
+
+    <section class="task-list-section">
+      <ul id="taskList" class="task-list"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>LocalStorage • Fetch • try/catch • DOM</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

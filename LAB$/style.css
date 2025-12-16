@@ -1,0 +1,170 @@
+/* Base reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Simplified font */
+  background: #e0f2f1; /* Light teal background */
+  color: #333;
+  padding: 20px;
+}
+
+/* Page layout */
+.page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Card */
+.form-card {
+  max-width: 600px;
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #b2dfdb; /* Light teal border */
+  border-radius: 8px; /* Simpler border radius */
+  padding: 1.5rem;
+}
+
+/* Header */
+.form-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 1.4rem;
+}
+
+.form-header p {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Form layout (Simplified to stacking) */
+.event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-grid {
+  /* No grid, items will stack by default in the field-group flex container */
+  display: block;
+}
+
+/* Fields */
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+/* Labels */
+.field-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 0.3rem;
+}
+
+/* Required asterisk */
+.required::after {
+  content: " *";
+  color: #d32f2f;
+}
+
+/* Inputs, selects, textarea */
+.field-group input[type="text"],
+.field-group input[type="email"],
+.field-group input[type="tel"],
+.field-group select,
+.field-group textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  font-size: 1rem;
+}
+
+/* Focus styles (Basic) */
+.field-group input:focus,
+.field-group select:focus,
+.field-group textarea:focus {
+  outline: 1px solid #009688; /* Teal focus color */
+  border-color: #009688;
+}
+
+/* Fieldset styling */
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+fieldset legend {
+  padding: 0 0.5rem;
+  font-weight: bold;
+}
+
+/* Inline options (Simple flex for radio/checkboxes) */
+.inline-options {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.4rem;
+}
+
+/* Checkbox + radio labels */
+.option {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Buttons row */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 4px;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Primary button */
+.btn.primary {
+  background-color: #009688; /* Teal primary color */
+  color: #fff;
+  border: 1px solid #009688;
+}
+
+/* Ghost button */
+.btn.ghost {
+  background-color: transparent;
+  color: #444;
+  border: 1px solid #aaa;
+}
+
+/* Basic hover states */
+.btn.primary:hover {
+  background-color: #00796b; /* Darker teal on hover */
+}
+
+.btn.ghost:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Travel Explorer - Async API Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Travel Explorer</h1>
+    <button id="loadTripsBtn">Load Trips</button>
+  </header>
+
+  <main class="main-layout">
+    <aside class="sidebar">
+      <h2>Filters</h2>
+      <label>
+        Region:
+        <select id="regionSelect">
+          <option value="europe">Europe</option>
+          <option value="asia">Asia</option>
+          <option value="americas">Americas</option>
+        </select>
+      </label>
+    </aside>
+
+    <section class="content">
+      <h2>Available Trips</h2>
+      <div id="status" class="status">Click "Load Trips" to fetch data.</div>
+      <div id="tripsContainer" class="trips-container"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <small>Async/Await • Promises • CSS calc()</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
