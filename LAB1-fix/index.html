@@ -3,33 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAB1 - Introduction to HTML</title>
+    <title>Alex Morgan - Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to LAB1</h1>
-        <p>Introduction to HTML Basics</p>
-    </header>
-    <main>
-        <section>
-            <h2>About This Lab</h2>
-            <p>This lab introduces fundamental HTML concepts including:</p>
-            <ul>
-                <li>Document structure</li>
-                <li>Headings and paragraphs</li>
-                <li>Lists</li>
-                <li>Links</li>
-                <li>Basic styling</li>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">AM</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </section>
-        <section>
-            <h2>Learn More</h2>
-            <p>Visit <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs</a> for comprehensive HTML documentation.</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 FWD HTML Labs</p>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="https://via.placeholder.com/200" alt="Alex Morgan" class="profile-photo">
+            <h1 class="hero-title">Hi, I'm <span class="highlight">Alex Morgan</span></h1>
+            <p class="hero-subtitle">Web Developer | UI/UX Enthusiast | Problem Solver</p>
+            <div class="social-links">
+                <a href="https://github.com" target="_blank" class="social-icon">GitHub</a>
+                <a href="https://linkedin.com" target="_blank" class="social-icon">LinkedIn</a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a>
+                <a href="mailto:alex@example.com" class="social-icon">Email</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p class="about-text">
+                I'm a passionate web developer with a keen eye for design and a love for creating 
+                intuitive, user-friendly experiences. With expertise in modern web technologies, 
+                I specialize in building responsive websites and applications that not only look 
+                great but also provide seamless functionality.
+            </p>
+            <p class="about-text">
+                When I'm not coding, you can find me exploring new technologies, contributing to 
+                open-source projects, or enjoying a good cup of coffee while sketching out new ideas.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Frontend Development</h3>
+                    <ul class="skill-list">
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React & Vue.js</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend Development</h3>
+                    <ul class="skill-list">
+                        <li>Node.js & Express</li>
+                        <li>Python & Django</li>
+                        <li>RESTful APIs</li>
+                        <li>Database Management</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools & Technologies</h3>
+                    <ul class="skill-list">
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>Figma & Adobe XD</li>
+                        <li>Agile Methodologies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">📱</div>
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-stack e-commerce solution with payment integration and admin dashboard.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">🎨</div>
+                    <h3>Portfolio Design System</h3>
+                    <p>A comprehensive UI component library built with modern CSS techniques.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">⚡</div>
+                    <h3>Task Management App</h3>
+                    <p>Real-time collaborative task manager with drag-and-drop functionality.</p>
+                    <a href="#" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-text">
+                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            </p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Email:</strong> <a href="mailto:alex@example.com">alex@example.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Location:</strong> San Francisco, CA
+                </div>
+                <div class="contact-item">
+                    <strong>Available:</strong> For freelance work
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Alex Morgan. Designed with passion and CSS.</p>
     </footer>
 </body>
 </html>
